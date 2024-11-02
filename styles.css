@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Keep padding for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    background-color: #f0f0f0; /* Optional background color */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+h1 {
+    color: #333;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Changed to white for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+p {
+    margin: 10px 0;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Container Styles */
+.container {
+    border: solid 1px #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 50%; /* Center the container */
+}
+
+/* Centering edit and delete links */
+.editAndDelete {
+    margin-top: 10px;
+    text-align: right; /* Aligns the links to the right */
+}
+
+.editAndDelete a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.editAndDelete a:hover {
+    text-decoration: underline;
+}
+
+/* Login and Registration Specific Styles */
+.login-form, .registration-form {
+    max-width: 300px;
+    width: 100%; /* Ensure full width in smaller screens */
+}
+
+.login-form input[type="submit"], .registration-form input[type="submit"] {
+    width: 100%;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f9f9f9;
+}
+/* Header Styles */
+.header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center items vertically */
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px 20px; /* Padding for header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    width: 100%; /* Full width of the viewport */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+.logoutBtn {
+    padding: 8px 16px; /* Padding for the button */
+    background-color: #f44336; /* Red background color */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 0; /* Ensure no margin to position it correctly */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.logoutBtn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
